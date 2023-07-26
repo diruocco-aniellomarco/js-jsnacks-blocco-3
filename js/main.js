@@ -27,14 +27,32 @@
 //     console.log('I due numeri sono uguali ' + random);
 // }
 
-const firstW = prompt('Scrivi la prima parola');
-const secondW = prompt('Scrivi la seconda parola');
+// const firstW = prompt('Scrivi la prima parola');
+// const secondW = prompt('Scrivi la seconda parola');
 
-if (firstW.length == secondW.length) {
-    console.log(firstW);
-    console.log(secondW);
-} else if (firstW.length > secondW.length) {
-    console.log(firstW);
-} else {
-    console.log(secondW);
+// if (firstW.length == secondW.length) {
+//     console.log(firstW);
+//     console.log(secondW);
+// } else if (firstW.length > secondW.length) {
+//     console.log(firstW);
+// } else {
+//     console.log(secondW);
+// }
+
+
+let listNum =[];
+
+let sum = 0;
+while (sum < 50) {
+    let number = parseInt(prompt(' Inserisci il numero: '));
+    sum = sum + number;
+    if (sum < 50) {
+        listNum.push(number);
+    }
+    console.log('Il numero inserito è: ' + number);
+    
+    
 }
+console.log(listNum);
+console.log('La somma è:  ' + sum);
+
