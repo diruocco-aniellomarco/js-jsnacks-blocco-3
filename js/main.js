@@ -69,11 +69,11 @@
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     console.log(numbers.length);
     let evenNumbers = []; //array non variabile
-    //numbers.length - 2 (perché devo arrivare fino al valore 6) e non meno 1 ; i++ senza ";"
+    // i++ senza ";"
     for (let i = 0; i < numbers.length - 1; i++) {
-        //numbers[i] e non numbers poi != e non =
+        //numbers[i] poi ci vogliono i 2 "="
         if (numbers[i] % 2 == 0) {
-            //devo inserire i valori di numbers
+            
             evenNumbers.push(i);
         }
     }
